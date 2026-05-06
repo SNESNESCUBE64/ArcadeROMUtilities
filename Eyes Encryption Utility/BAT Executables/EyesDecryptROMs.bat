@@ -1,0 +1,1 @@
+python ..\EyesEncryptionUtility.py -d
