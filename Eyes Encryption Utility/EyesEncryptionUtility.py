@@ -113,7 +113,7 @@ def makeBackup(base_dir, rom_list):
 
 #Function that only prints the arguments and how to use this script
 def printArguments():
-    print("Expected Arguement format: python PacPlusEncryptionUtility.py *function*")
+    print("Expected Arguement format: python EyesEncryptionUtility.py *function*")
     print("Function arguement options:")
     print("   -e          Encrypt ROMs")
     print("   -d          Decrypt ROMs")
