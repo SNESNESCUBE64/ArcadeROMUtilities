@@ -11,7 +11,6 @@ To use this script, place the python script in the same folder as the ROMs (d7, 
 ```
 python EyesEncryptionUtility.py -d
 ```
-or
 
 ### Encryption Execution
 ```
