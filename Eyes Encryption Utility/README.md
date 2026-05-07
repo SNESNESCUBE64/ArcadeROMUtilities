@@ -9,13 +9,13 @@ To use this script, place the python script in the same folder as the ROMs (d7, 
 
 ### Decryption Execution
 ```
-python python EyesEncryptionUtility.py -d
+python EyesEncryptionUtility.py -d
 ```
 or
 
 ### Encryption Execution
 ```
-python ..\EyesEncryptionUtility.py -e
+python EyesEncryptionUtility.py -e
 ```
 
 ### Arguements
