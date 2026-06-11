@@ -128,8 +128,7 @@ if len(sys.argv) > 1:
     if sys.argv[1] == "-help":
         printArguments()
     elif sys.argv[1] == "-e":
-        makeBackup(base_dir, EYES_CPU_ROM_LIST)
-        makeBackup(base_dir, EYES_VID_ROM_LIST)
+        makeBackup(base_dir, EYES_CPU_ROM_LIST + EYES_VID_ROM_LIST) 
         for filename in EYES_CPU_ROM_LIST:
             obfuscatedBuffer = getCpuBuffer(os.path.join(base_dir, filename + "_Decrypted"),CPU_BUFFER_SIZE)
             writeROMData(os.path.join(base_dir, filename), obfuscatedBuffer)
@@ -137,8 +136,7 @@ if len(sys.argv) > 1:
             obfuscatedBuffer = getVideoBuffer(os.path.join(base_dir, filename + "_Decrypted"),CPU_BUFFER_SIZE)
             writeROMData(os.path.join(base_dir, filename), obfuscatedBuffer)
     elif sys.argv[1] == "-d":
-        makeBackup(base_dir, EYES_CPU_ROM_LIST)
-        makeBackup(base_dir, EYES_VID_ROM_LIST)
+        makeBackup(base_dir, EYES_CPU_ROM_LIST + EYES_VID_ROM_LIST)
         for filename in EYES_CPU_ROM_LIST:
             obfuscatedBuffer = getCpuBuffer(os.path.join(base_dir, filename),CPU_BUFFER_SIZE)
             writeROMData(os.path.join(base_dir, filename + "_Decrypted"), obfuscatedBuffer)
